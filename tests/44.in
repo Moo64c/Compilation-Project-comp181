@@ -1,0 +1,2 @@
+(define number? (lambda x #f))
+(rational? 1)

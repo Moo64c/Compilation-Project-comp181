@@ -1,0 +1,10 @@
+(define foo (lambda (i)
+	(let ((c (integer->char i)))
+		(if (= (char->integer #\~) i) 
+			(string->symbol (make-string 1 c))
+			(begin
+				(string->symbol (make-string 1 c))
+				(foo (+ 1 i)))))))
+
+(eq? (string->symbol "~") (foo 30))
+               

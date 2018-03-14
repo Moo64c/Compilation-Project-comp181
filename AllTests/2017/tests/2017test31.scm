@@ -1,0 +1,6 @@
+(define (equal? x y)
+    (if (not (pair? x))
+        (eq? x y)
+        (and (equal? (car x) (car y))
+             (equal? (cdr x) (cdr y)))))
+(equal? (cons 1 2) (cons 1 3))

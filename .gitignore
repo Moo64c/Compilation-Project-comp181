@@ -1,0 +1,13 @@
+*.ss~
+*.ss#*
+.#*.ss
+
+*.scm~
+*.scm#*
+.#*.scm
+*.lst
+*.o
+*.s
+*.html
+*.zip
+testdir/*

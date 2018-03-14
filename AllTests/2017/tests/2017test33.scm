@@ -1,0 +1,6 @@
+((lambda (x y)
+      (cond ((= x y) #t)
+            ((> x y) 'x>y)
+            ((and (> (+ x y) 10) (> (* x y) 40)) 'string)
+            )
+      ) 111 11)

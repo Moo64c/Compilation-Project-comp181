@@ -1,0 +1,6 @@
+(let ((baf (lambda (f)
+               (lambda (n)
+                 (if (> n 0)
+                     `(* ,n ,((f f) (- n 1)))
+                     (symbol->string 'end))))))
+    ((baf baf) 3))

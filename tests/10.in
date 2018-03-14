@@ -1,0 +1,7 @@
+(define a 'alpha)
+(define b 'beta)
+
+((lambda (x y)
+	(begin
+		(set! y (string->symbol "alpha"))
+		(eq? x y))) a b)
